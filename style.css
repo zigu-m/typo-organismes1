@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'LotoVF';
+    src: url('./lotoVF.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: "SpaceGrotesk";
+    src: url("./jgs_Font.ttf") format("truetype");
+    font-weight: norm;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  body {
+    font-family: 'SpaceGrotesk';
+    padding: 40px;
+    background-color: rgb(234, 255, 142);
+  }
+
+  h3{
+    color: black;
+    font-size: clamp(20px,3vw,40px);
+    margin-top: 0;
+    border-bottom: black 1px solid;
+    padding-bottom: 10px;
+  }
+
+  .wrap {
+    flex-direction: row;
+    min-height: calc(100vh-80px);
+    display: flex;
+    justify-content: start; /* 가로 가운데 */
+    align-items: start;     /* 세로 가운데 */
+    gap: 20px;
+ 
+  }
+
+  .text {
+    width: 70%;
+    max-width: 1100px;
+    text-align: start;
+    font-family: 'LotoVF';
+    font-size: clamp(72px,7vw,160px);
+    font-variation-settings: "wght" 100, "wdth" 100;
+  }
+
+  .text p {
+    margin: 20px;
+  }
+
+  .input-box {
+  margin-top: 20px;
+}
+
+#preview {
+    outline: none;       /* 클릭 시 파란 테두리 제거 */
+    cursor: text;
+  }
+  
+  #preview:empty::before {
+    content: "_____";
+    color: #aaa;
+  }
+  .controls {
+    width: 30%;
+  }
+
+  .controls p{
+    padding-top: 30px;
+    color: black;
+    font-size: 14px;
+    max-width: 330px;
+  }
+  .controls > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .controls input[type="range"] {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .controls .credit{
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 330px;
+  }
+
+  .download-wrap {
+    margin-top: 20px;
+    max-width: 300px;
+  }
+  
+  .download-btn {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 20px;
+    border: 1px solid #000;
+    border-radius: 999px;
+    text-decoration: none;
+    color: #000;
+    background: none;
+    font-size: 16px;
+    transition: 0.2s ease;
+    align-items: center;
+  }
+  
+  .download-btn:hover {
+    background: #000;
+    color: #fff;
+  }
+
+  .icon{
+    width: 20px;
+    height: 20px;
+    fill: none;
+    stroke-width: 1.75;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .icon path {
+    stroke: black;
+    transition: 0.2s ease;
+  }
+
+  .download-btn:hover .icon path{
+    stroke: #fff;
+  }
+
+  @media (max-width: 730px){
+    .wrap{
+        flex-direction: column;
+    }
+    .controls{
+      width: 100%;
+    }
+    .controls p{
+      max-width: none;
+    }
+    .text{
+      width: 100%;
+    }
+  }
+
+  

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Typo-organismes</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <h3>Typo-organismes</h3>
+    <div class="wrap">
+
+    <div class="controls">
+        
+    <div>
+      Weight:
+      <input type="range" id="weight" min="100" max="700" value="100">
+    </div>
+
+    <div>
+      Width:
+      <input type="range" id="width" min="80" max="100" value="100">
+    </div>
+    <p>Cette police variable expérimentale s’inspire de dessins pixelisés générés à 
+        partir du jeu de la vie de Conway. Elle transpose les logiques de naissance, 
+        de disparition et d’évolution des cellules dans une forme typographique, où 
+        l’épaisseur et la largeur varient tout en conservant une structure modulaire, 
+        évoquant un organisme numérique en mutation.</p>
+    <div class="credit">
+        <p>Design :<br>Éditeur :<br>Jeu de caractères :<br>Date</p>
+        <p>Seoyul LEE<br>Seoyul LEE<br>Latin (majuscules)<br>25 mars 2026</p>
+    </div>
+    <div class="download-wrap">
+        <a href="./lotoVF.ttf" download class="download-btn"><span>Télécharger la police</span>
+            <svg viewBox="0 0 28 28" class="icon">
+                <path d="M14 23.3333V4.66667" stroke="black" stroke-width="1.75" stroke-miterlimit="10" stroke-linecap="round"/>
+                <path d="M5.06334 15.1293L12.7307 22.7967C12.8967 22.9646 13.0944 23.0979 13.3122 23.1888C13.5301 23.2798 13.7639 23.3267 14 23.3267C14.2361 23.3267 14.4699 23.2798 14.6878 23.1888C14.9057 23.0979 15.1033 22.9646 15.2693 22.7967L22.9378 15.1293" stroke="black" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="text" id="text">
+        <p>a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+        <p id="preview" contenteditable="true"></p>
+      </div>
+  
+
+    <script src="script.js"></script>
+
+</body>
+</html>
